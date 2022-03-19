@@ -36,7 +36,7 @@
 
     <div class="acc">Lub zaloguj się przez Google.</div>
     <div class="google">
-      <a href="#">Zaloguj się przez Google<i class="demo-icon icon-google"></i></a>
+      <a href="https://google.com">Zaloguj się przez Google<i class="demo-icon icon-google"></i></a>
     </div>
     <div class="acc">
       Nie masz konta? <a href="register.html">Zarejestruj się teraz.</a>
@@ -85,8 +85,9 @@
     }} 
 
     function Redirect(){
+
       if(emailcorrect == 1 && passcorrect == 1){
-        window.location.href = "https://mitsik3310.github.io/iSocial/";
+        setTimeout("location.href='https://mitsik3310.github.io/iSocial/';",5);
       }
       if(emailcorrect == 0 || passcorrect == 0){
         return false;
