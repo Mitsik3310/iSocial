@@ -54,7 +54,7 @@
           się.</button>
       </div>
       <div class="acc">
-        Masz już konto? <a href="register.html">Zaloguj się teraz.</a>
+        Masz już konto? <a href="login.html">Zaloguj się teraz.</a>
       </div>
     </form>
   </div>
@@ -131,8 +131,7 @@
 
     function Redirect() {
       if (emailcorrect == 1 && passcorrect == 1 && phonecorrect == 1 && confirmPasswordcorrect == 1) {
-        location.href = "https://mitsik3310.github.io/iSocial/pages/more_info.html";
-        return true;
+        setTimeout("location.href='https://mitsik3310.github.io/iSocial/pages/more_info.html';",5);
       }
       if (emailcorrect == 0 || passcorrect == 0 || phonecorrect == 0 || confirmPasswordcorrect == 0) {
         return false;
