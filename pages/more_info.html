@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>I social - Uzupełnij profil</title>
-  <meta name="description"
-    content="Najpopularniejszy portal społecznościowy. Uzupełnij swój profil" />
+  <meta name="description" content="Najpopularniejszy portal społecznościowy. Uzupełnij swój profil" />
   <meta name="keywords" content="iSocial, isocial, social" />
   <link rel="shortcut icon" href="../media/logo_rounded.png" />
   <link rel="stylesheet" href="../styles/more_info_styles.css">
@@ -16,7 +15,57 @@
 </head>
 
 <body>
-    Podaj nam więcej informacji o sobie.
+  <div id="container">
+    <div id="left_part">
+      <p>test</p>
+    </div>
+    <div id="right_part">
+
+      <form name="form2">
+        <div class="input">
+          <span class="text_above_fill">Twoje zdjęcie profilowe *</span>
+          <input type="file" required>
+        </div>
+        <div class="input">
+          <span class="text_above_fill">Twoje imię i nazwisko.</span>
+          <input type="text" placeholder="Podaj imię i nazwisko." required>
+        </div>
+        <div class="input">
+          <span class="text_above_fill">Data twojego urodzenia. *</span>
+          <input type="date" required>
+        </div>
+        <div class="input">
+          <span class="text_above_fill">Twoja płeć. *</span>
+          <span class="text_above_fill">Mężczyzna </span>
+          <input type="radio" placeholder="Mężczyzna." required>
+          <span class="text_above_fill">Kobieta </span>
+          <input type="radio" placeholder="Kobieta." required>
+          <span class="text_above_fill">Inna </span>
+          <input type="radio" placeholder="Inna." required>
+        </div>
+        <div class="input">
+          <select>
+            <option>Wybierz miejsce zamieszkania. *</option>
+            <option>Województwo dolnośląskie</option>
+            <option>kujawsko-pomorskie</option>
+            <option>lubelskie</option>
+            <option>lubuskie</option>
+            <option>łódzkie</option>
+            <option>małopolskie</option>
+            <option>mazowieckie</option>
+            <option>opolskie</option>
+            <option>podkarpackie</option>
+            <option>podlaskie</option>
+            <option>pomorskie</option>
+            <option>śląskie</option>
+            <option>świętokrzyskie</option>
+            <option>warmińsko-mazurskie</option>
+            <option>wielkopolskie</option>
+            <option>zachodniopomorskie</option>
+          </select>
+        </div>
+    </div>
+  </div>
 </body>
 
 </html>
