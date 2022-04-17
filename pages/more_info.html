@@ -17,15 +17,16 @@
 <body>
   <div id="container">
     <div id="left_part">
-      <p>test</p>
+      <img src="../media/awatar.png" id="awatar">
+      <p>Witaj Imie Nazwisko.</p>
+      <div class="input_photo">
+        <span class="text_above_fill">Wybierz zdjęcie profilowe:</span>
+        <button class="setPicture" style="display:block;width:120px; height:30px;" onclick="document.getElementById('getFile').click()">prześlij zdjęcie</button>
+      </div>
     </div>
     <div id="right_part">
-
+      <p id="upper">Uzupełnij swój profil informacjami, które ułatwią znalezienie cię przez twoich znajomych, oraz umożliwią nam proponowanie grub lepiej dobranych do Twoich zainteresowań.</p>
       <form name="form2">
-        <div class="input">
-          <span class="text_above_fill">Twoje zdjęcie profilowe *</span>
-          <input type="file" required>
-        </div>
         <div class="input">
           <span class="text_above_fill">Twoje imię i nazwisko.</span>
           <input type="text" placeholder="Podaj imię i nazwisko." required>
@@ -47,24 +48,28 @@
           <select>
             <option>Wybierz miejsce zamieszkania. *</option>
             <option>Województwo dolnośląskie</option>
-            <option>kujawsko-pomorskie</option>
-            <option>lubelskie</option>
-            <option>lubuskie</option>
-            <option>łódzkie</option>
-            <option>małopolskie</option>
-            <option>mazowieckie</option>
-            <option>opolskie</option>
-            <option>podkarpackie</option>
-            <option>podlaskie</option>
-            <option>pomorskie</option>
-            <option>śląskie</option>
-            <option>świętokrzyskie</option>
-            <option>warmińsko-mazurskie</option>
-            <option>wielkopolskie</option>
-            <option>zachodniopomorskie</option>
+            <option>Województwo kujawsko-pomorskie</option>
+            <option>Województwo lubelskie</option>
+            <option>Województwo lubuskie</option>
+            <option>Województwo łódzkie</option>
+            <option>Województwo małopolskie</option>
+            <option>Województwo mazowieckie</option>
+            <option>Województwo opolskie</option>
+            <option>Województwo podkarpackie</option>
+            <option>Województwo podlaskie</option>
+            <option>Województwo pomorskie</option>
+            <option>Województwo śląskie</option>
+            <option>Województwo świętokrzyskie</option>
+            <option>Województwo warmińsko-mazurskie</option>
+            <option>Województwo wielkopolskie</option>
+            <option>Województwo zachodniopomorskie</option>
           </select>
         </div>
     </div>
+    <button class="button" onclick="">Zapisz zmiany.</button>
+  </div>        
+  <div id="hidden">
+    <input type="file" id="getFile">
   </div>
 </body>
 

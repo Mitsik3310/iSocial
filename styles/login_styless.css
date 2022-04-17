@@ -196,11 +196,11 @@ p {
     font-size: 30px;
   }
 }
-@media (max-width: 770px){
+@media (max-width: 770px) and (min-width: 250px){
   .container{
-    position: relative;
-    margin-left: 50%;
-    margin-right: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
   .text {
     display: none;

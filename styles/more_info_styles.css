@@ -15,19 +15,87 @@ body{
 #container{
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0%);
-    border: 1px solid salmon;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    height: 750px;
+    width: 800px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
+
+#right_part{
+    float: left;
+    width: 450px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#awatar{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.input_photo{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+#hidden{
+    display: none;
+}
+.setPicture{
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    background: #1d2671;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+.setPicture:hover{
+    transition: all 0.3s ease;
+    background: #c33764;
+}
+
+
 #left_part{
     float: left;
-    border: 1px solid white;
-    width: 600px;
-    margin-left: 100px;
+    width: 200px;
+    margin-left: 50px;
+    height: 400px;
+    padding: 5px;
 }
-#right_part{
-    position: relative;
-    border: 1px solid black;
-    float: left;
-    width: 600px;
-    margin-left: 100px;
+#upper{
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
+
+.button{
+    position: absolute;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #1d2671;
+    line-height: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 80%;
+    text-align: center;
+  }
+  .button:hover{
+    transition: all 0.3s ease;
+    background: #c33764;
+  }
