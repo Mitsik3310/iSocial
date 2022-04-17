@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>I social - Uzupełnij profil</title>
+  <meta name="description" content="Najpopularniejszy portal społecznościowy. Uzupełnij swój profil" />
+  <meta name="keywords" content="iSocial, isocial, social" />
+  <link rel="shortcut icon" href="../media/logo_rounded.png" />
+  <link rel="stylesheet" href="../styles/more_info_styles.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="left_part">
+      <img src="../media/awatar.png" id="awatar">
+      <p>Witaj Imie Nazwisko.</p>
+      <div class="input_photo">
+        <span class="text_above_fill">Wybierz zdjęcie profilowe:</span>
+        <button class="setPicture" style="display:block;width:120px; height:30px;" onclick="document.getElementById('getFile').click()">prześlij zdjęcie</button>
+      </div>
+    </div>
+    <div id="right_part">
+      <p id="upper">Uzupełnij swój profil informacjami, które ułatwią znalezienie cię przez twoich znajomych, oraz umożliwią nam proponowanie grub lepiej dobranych do Twoich zainteresowań.</p>
+      <form name="form2">
+        <div class="input">
+          <span class="text_above_fill">Twoje imię i nazwisko.</span>
+          <input type="text" placeholder="Podaj imię i nazwisko." required>
+        </div>
+        <div class="input">
+          <span class="text_above_fill">Data twojego urodzenia. *</span>
+          <input type="date" required>
+        </div>
+        <div class="input">
+          <span class="text_above_fill">Twoja płeć. *</span>
+          <span class="text_above_fill">Mężczyzna </span>
+          <input type="radio" placeholder="Mężczyzna." required>
+          <span class="text_above_fill">Kobieta </span>
+          <input type="radio" placeholder="Kobieta." required>
+          <span class="text_above_fill">Inna </span>
+          <input type="radio" placeholder="Inna." required>
+        </div>
+        <div class="input">
+          <select>
+            <option>Wybierz miejsce zamieszkania. *</option>
+            <option>Województwo dolnośląskie</option>
+            <option>Województwo kujawsko-pomorskie</option>
+            <option>Województwo lubelskie</option>
+            <option>Województwo lubuskie</option>
+            <option>Województwo łódzkie</option>
+            <option>Województwo małopolskie</option>
+            <option>Województwo mazowieckie</option>
+            <option>Województwo opolskie</option>
+            <option>Województwo podkarpackie</option>
+            <option>Województwo podlaskie</option>
+            <option>Województwo pomorskie</option>
+            <option>Województwo śląskie</option>
+            <option>Województwo świętokrzyskie</option>
+            <option>Województwo warmińsko-mazurskie</option>
+            <option>Województwo wielkopolskie</option>
+            <option>Województwo zachodniopomorskie</option>
+          </select>
+        </div>
+    </div>
+    <button class="button" onclick="">Zapisz zmiany.</button>
+  </div>        
+  <div id="hidden">
+    <input type="file" id="getFile">
+  </div>
+</body>
+
+</html>

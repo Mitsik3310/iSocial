@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #c33764, #1d2671);
+  height: 100vh;
+  width: 100vw;
+  min-width: 640px;
+  overflow-x: hidden;
+}
+.container{
+  position: absolute;
+  background: #FFFFFF;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 25px;
+  border-radius: 10px;
+}
+.title{
+  font-size: 25px;
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+.input{
+  margin-top: 25px;
+  width: 300px;
+}
+.input input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 5px;
+  border: 1px solid lightgray;
+  border-bottom-width: 2px;
+}
+.submit{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.button{
+  height: 40px;
+  width: 250px;
+  margin: 25px 0;
+  border-radius: 5px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  background: #1d2671;
+  line-height: 30px;
+  text-align: center;
+}
+.button:hover{
+  transition: all 0.3s ease;
+  background: #c33764;
+}
+.google a{
+  display: block;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 10px;
+  line-height: 45px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.google i{
+  position: relative;
+  bottom: 5px;
+  font-size: 17px;
+  padding-left: 3px;
+}
+.google a{
+  background: #1d2671;
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+.google a:hover{
+  background: #c33764;
+  margin: 25px 0 35px 0;
+}
+.acc a{
+ text-decoration: none;
+ color: #1d2671;
+}
+.acc{
+  text-align: center;
+}
+
+
+.text {
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  font-size: 50px;
+  font-weight: 400;
+}
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.word {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.wisteria {
+  color: #8e44ad;
+}
+.belize {
+  color: #2980b9;
+}
+.pomegranate {
+  color: #c0392b;
+}
+.green {
+  color: #16a085;
+}
+.midnight {
+  color: #2c3e50;
+}
+
+
+@media (max-width: 1920px) and (min-width: 1200px) {
+  .container{
+    margin-left: 45%;
+  }
+  .text{
+    margin-right: 45%;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1000px){
+  .container{
+    position: absolute;
+    margin-left: 45%;
+  }
+  .text {
+    position: absolute;
+    margin-right: 35%;
+    font-size: 40px;
+  }
+}
+@media (max-width: 1000px) and (min-width: 720px){
+.container{
+  position: absolute;
+  margin-left: 55%;
+}
+.text {
+  margin-right: 30%;
+  font-size: 40px;
+  }
+}
+@media (max-width: 880px) and (min-width: 770px){
+  .container{
+    position: absolute;
+    margin-left: 50%;
+  }
+  .text {
+    margin-right: 14%;
+    font-size: 30px;
+  }
+}
+@media (max-width: 770px) and (min-width: 250px){
+  .container{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .text {
+    display: none;
+  }
+}
