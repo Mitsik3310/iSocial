@@ -1,76 +1,249 @@
 <!DOCTYPE html>
 <html lang="pl" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <title>I social - Uzupełnij profil</title>
-  <meta name="description" content="Najpopularniejszy portal społecznościowy. Uzupełnij swój profil" />
-  <meta name="keywords" content="iSocial, isocial, social" />
-  <link rel="shortcut icon" href="../media/logo_rounded.png" />
-  <link rel="stylesheet" href="../styles/more_info_styles.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-  <div id="container">
-    <div id="left_part">
-      <img src="../media/awatar.png" id="awatar">
-      <p>Witaj Imie Nazwisko.</p>
-      <div class="input_photo">
-        <span class="text_above_fill">Wybierz zdjęcie profilowe:</span>
-        <button class="setPicture" style="display:block;width:120px; height:30px;" onclick="document.getElementById('getFile').click()">prześlij zdjęcie</button>
+   <head>
+      <meta charset="UTF-8">
+      <title>I social - Uzupełnij profil</title>
+      <meta name="description" content="Najpopularniejszy portal społecznościowy. Uzupełnij swój profil" />
+      <meta name="keywords" content="iSocial, isocial, social" />
+      <link rel="shortcut icon" href="../media/logo_rounded.png" />
+      <link rel="stylesheet" href="../styles/more_info_styles.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="container">
+         <div id="left_part">
+            <img src="../media/awatar.png" id="awatar">
+            <p id="name">Witaj Imie Nazwisko.</p>
+            <div class="input_photo">
+               <span class="text_above_fill">Wybierz zdjęcie profilowe:</span>
+               <button class="setPicture" style="display:block;width:120px; height:30px;" onclick="document.getElementById('getFile').click()">prześlij zdjęcie</button>
+            </div>
+         </div>
+         <div id="right_part">
+            <p id="upper">Uzupełnij swój profil informacjami, które ułatwią znalezienie Cię przez twoich znajomych, oraz umożliwią nam dobieranie grup lepiej dobranych do Twoich zainteresowań.</p>
+            <p id="upperlow">* Widoczność tych elementów możesz dostosować później w panelu prywatności</p>
+            <form name="form2">
+            <div class="input">
+               <span class="text_above_fill">Data twojego urodzenia. *</span> </br>
+               <label class="select2">
+                  <select required="required">
+                     <option disabled="disabled" selected="selected">Rok</option>
+                     <option>1900</option>
+                     <option>...</option>
+                     <option>1910</option>
+                     <option>...</option>
+                     <option>1920</option>
+                     <option>...</option>
+                     <option>1930</option>
+                     <option>...</option>
+                     <option>1940</option>
+                     <option>...</option>
+                     <option>1950</option>
+                     <option>...</option>
+                     <option>1960</option>
+                     <option>...</option>
+                     <option>1970</option>
+                     <option>...</option>
+                     <option>1980</option>
+                     <option>...</option>
+                     <option>1990</option>
+                     <option>...</option>
+                     <option>2000</option>
+                     <option>...</option>
+                     <option>2010</option>
+                     <option>...</option>
+                     <option>2020</option>
+                     <option>...</option>
+                     <option>2021</option>
+                     <option>...</option>
+                     <option>2022</option>
+                  </select>
+                  <svg>
+                     <use xlink:href="#select-arrow-down"></use>
+                  </svg>
+               </label>
+               <svg class="sprites">
+                  <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                     <polyline points="1 1 5 5 9 1"></polyline>
+                  </symbol>
+               </svg>
+               <label class="select2">
+                  <select required="required">
+                     <option disabled="disabled" selected="selected">Miesiąc</option>
+                     <option>Styczeń</option>
+                     <option>Luty</option>
+                     <option>Marzec</option>
+                     <option>Kwiecień</option>
+                     <option>Maj</option>
+                     <option>Czerwiec</option>
+                     <option>Lipiec</option>
+                     <option>Sierpień</option>
+                     <option>Wrzesień</option>
+                     <option>Październik</option>
+                     <option>Listopad</option>
+                     <option>Grudzień</option>
+                  </select>
+                  <svg>
+                     <use xlink:href="#select-arrow-down"></use>
+                  </svg>
+               </label>
+               <svg class="sprites">
+                  <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                     <polyline points="1 1 5 5 9 1"></polyline>
+                  </symbol>
+               </svg>
+               <label class="select2">
+                  <select required="required">
+                     <option disabled="disabled" selected="selected">Dzień</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     <option>10</option>
+                     <option>11</option>
+                     <option>12</option>
+                     <option>13</option>
+                     <option>14</option>
+                     <option>15</option>
+                     <option>16</option>
+                     <option>17</option>
+                     <option>18</option>
+                     <option>19</option>
+                     <option>20</option>
+                     <option>21</option>
+                     <option>22</option>
+                     <option>23</option>
+                     <option>24</option>
+                     <option>25</option>
+                     <option>26</option>
+                     <option>27</option>
+                     <option>28</option>
+                     <option>29</option>
+                     <option>30</option>
+                     <option>31</option>
+                  </select>
+                  <svg>
+                     <use xlink:href="#select-arrow-down"></use>
+                  </svg>
+               </label>
+               <svg class="sprites">
+                  <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                     <polyline points="1 1 5 5 9 1"></polyline>
+                  </symbol>
+               </svg>
+            </div>
+            <br>
+            <div class="input">
+               <span class="text_above_fill">Wybierz miejsce zamieszkania. *</span> </br>
+               <label class="select">
+                  <select required="required">
+                     <option disabled="disabled" selected="selected">Wybierz województwo:</option>
+                     <option>Województwo dolnośląskie</option>
+                     <option>Województwo kujawsko-pomorskie</option>
+                     <option>Województwo lubelskie</option>
+                     <option>Województwo lubuskie</option>
+                     <option>Województwo łódzkie</option>
+                     <option>Województwo małopolskie</option>
+                     <option>Województwo mazowieckie</option>
+                     <option>Województwo opolskie</option>
+                     <option>Województwo podkarpackie</option>
+                     <option>Województwo podlaskie</option>
+                     <option>Województwo pomorskie</option>
+                     <option>Województwo śląskie</option>
+                     <option>Województwo świętokrzyskie</option>
+                     <option>Województwo warmińsko-mazurskie</option>
+                     <option>Województwo wielkopolskie</option>
+                     <option>Województwo zachodniopomorskie</option>
+                  </select>
+                  <svg>
+                     <use xlink:href="#select-arrow-down"></use>
+                  </svg>
+               </label>
+               <svg class="sprites">
+                  <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                     <polyline points="1 1 5 5 9 1"></polyline>
+                  </symbol>
+               </svg>
+            </div>
+            <br>
+            <div class="input">
+               <span class="text_above_fill">Wybierz wykształcenie *</span> </br>
+               <label class="select">
+                  <select required="required">
+                     <option disabled="disabled" selected="selected">Moje wykształcenie:</option>
+                     <option>Podstawowe</option>
+                     <option>Gimnazjalne</option>
+                     <option>Zasadnicze zawodowe</option>
+                     <option>Zasadnicze branżowe</option>
+                     <option>Średnie branżowe</option>
+                     <option>Średnie</option>
+                     <option>Wyższe</option>
+                  </select>
+                  <svg>
+                     <use xlink:href="#select-arrow-down"></use>
+                  </svg>
+               </label>
+               <svg class="sprites">
+                  <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                     <polyline points="1 1 5 5 9 1"></polyline>
+                  </symbol>
+               </svg>
+            </div>
+            <br>
+            <div class="input">
+               <span class="text_above_fill">Stan cywilny *</span> </br>
+               <label class="select">
+                  <select>
+                     <option disabled="disabled" selected="selected">Mój stan cywilny:</option>
+                     <option>Wolny</option>
+                     <option>W związku</option>
+                     <option>Zaręczony</option>
+                     <option>Po ślubie</option>
+                     <option>W związku partnerskim</option>
+                     <option>To skomplikowane</option>
+                     <option>Wdowiec</option>
+                  </select>
+                  <svg>
+                     <use xlink:href="#select-arrow-down"></use>
+                  </svg>
+               </label>
+               <svg class="sprites">
+                  <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                     <polyline points="1 1 5 5 9 1"></polyline>
+                  </symbol>
+               </svg>
+            </div>
+            <br>
+            <div class="other">
+               <span class="text_above_fill">Twój biogram </span> <br>
+               <input type="text" placeholder="&nbsp Opowiedz coś o sobie..."> 
+            </div>
+            <br>
+            <div class="input">
+               <span class="text_above_fill">Wybierz swoją płeć. *</span> </br>
+               Mężczyzna <input type="radio" class="sex" value="f"/>
+               Kobieta   <input type="radio" class="sex" value="m" />
+               Inna      <input type="radio" class="sex" value="undefined"/>
+            </div>
+            </br>
+         </div>
+         <button class="button" onclick="showAlert();">Zapisz zmiany.</button>
       </div>
-    </div>
-    <div id="right_part">
-      <p id="upper">Uzupełnij swój profil informacjami, które ułatwią znalezienie cię przez twoich znajomych, oraz umożliwią nam proponowanie grub lepiej dobranych do Twoich zainteresowań.</p>
-      <form name="form2">
-        <div class="input">
-          <span class="text_above_fill">Twoje imię i nazwisko.</span>
-          <input type="text" placeholder="Podaj imię i nazwisko." required>
-        </div>
-        <div class="input">
-          <span class="text_above_fill">Data twojego urodzenia. *</span>
-          <input type="date" required>
-        </div>
-        <div class="input">
-          <span class="text_above_fill">Twoja płeć. *</span>
-          <span class="text_above_fill">Mężczyzna </span>
-          <input type="radio" placeholder="Mężczyzna." required>
-          <span class="text_above_fill">Kobieta </span>
-          <input type="radio" placeholder="Kobieta." required>
-          <span class="text_above_fill">Inna </span>
-          <input type="radio" placeholder="Inna." required>
-        </div>
-        <div class="input">
-          <select>
-            <option>Wybierz miejsce zamieszkania. *</option>
-            <option>Województwo dolnośląskie</option>
-            <option>Województwo kujawsko-pomorskie</option>
-            <option>Województwo lubelskie</option>
-            <option>Województwo lubuskie</option>
-            <option>Województwo łódzkie</option>
-            <option>Województwo małopolskie</option>
-            <option>Województwo mazowieckie</option>
-            <option>Województwo opolskie</option>
-            <option>Województwo podkarpackie</option>
-            <option>Województwo podlaskie</option>
-            <option>Województwo pomorskie</option>
-            <option>Województwo śląskie</option>
-            <option>Województwo świętokrzyskie</option>
-            <option>Województwo warmińsko-mazurskie</option>
-            <option>Województwo wielkopolskie</option>
-            <option>Województwo zachodniopomorskie</option>
-          </select>
-        </div>
-    </div>
-    <button class="button" onclick="">Zapisz zmiany.</button>
-  </div>        
-  <div id="hidden">
-    <input type="file" id="getFile">
-  </div>
-</body>
-
+      <div id="hidden">
+         <input type="file" id="getFile">
+      </div>
+   </body>
+   <script>
+      function showAlert() {
+        var info = "Wciśnięcie przycisku 'ok' rozumiane jest jako znajomość i pełna akceptacja warunków użytkowania usługi, jak i polityki prywatności naszej firmy";
+        alert (info);
+        setTimeout("location.href='https://mitsik3310.github.io/iSocial/';",1);
+      }
+   </script>
 </html>

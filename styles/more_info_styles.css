@@ -62,8 +62,6 @@ body{
     transition: all 0.3s ease;
     background: #c33764;
 }
-
-
 #left_part{
     float: left;
     width: 200px;
@@ -72,12 +70,15 @@ body{
     padding: 5px;
 }
 #upper{
-    text-align: justify;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
+#upperlow{
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 .button{
     position: absolute;
     height: 40px;
@@ -91,11 +92,110 @@ body{
     background: #1d2671;
     line-height: 30px;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-40%, 0);
     margin-top: 80%;
     text-align: center;
-  }
-  .button:hover{
+}
+.button:hover{
     transition: all 0.3s ease;
     background: #c33764;
-  }
+}
+.select {
+    position: relative;
+    width: 250px;
+}
+.select2{
+    position: relative;
+    width: 150px;
+}
+.select svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+}
+.select2 svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+}
+.select select {
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 400px;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 150ms ease;
+    margin-top: 7px;
+}
+.select2 select{
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 130px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 150ms ease;
+    margin-top: 7px;
+}
+.select select:focus {
+    outline: none;
+    border-color: #1d2671;
+    box-shadow: 0 0 0 2px rgba(29, 38, 113, 0.2)
+}
+.select2 select:focus {
+    outline: none;
+    border-color: #1d2671;
+    box-shadow: 0 0 0 2px rgba(29, 38, 113, 0.2)
+}
+.sprites {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+}
+.sex{
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.other input{
+    height: 30px;
+    width: 400px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    margin-top: 7px;
+}
+
+@media (max-width: 850px) and (min-width: 500px) {
+    #container{
+        width: 500px;
+        height: auto;
+    }
+    #name{
+
+    }
+    .input_photo{
+
+    }
+    #right_part{
+        width: 450px;
+        margin-left: 25px;
+    }
+}
