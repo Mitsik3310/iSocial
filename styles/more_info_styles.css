@@ -186,7 +186,7 @@ body{
     margin-top: 7px;
 }
 
-@media (max-width: 850px) and (min-width: 500px) {
+/* @media (max-width: 850px) and (min-width: 500px) {
 
     body{
         height: 101vh;
@@ -228,32 +228,47 @@ body{
         left: 50%;
         transform: translate(-50%,1050%);
     }
-}
-@media (max-width: 500px) and (min-width: 200px) {
+} */
+@media (max-width: 850px) and (min-width: 200px) {
 
     body{
         height: (100% + 25px);
     }
     #container{
-        width: 500px;
+        width: 400px;
         height: 900px;
     }
     #left_part{
         position: absolute;
-        transform: translate();
+        transform: translate(-20%, 0%);
+    }
+    #upper{
+        font-size: 14px;
+        width: 350px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+    #upperlow{
+        font-size: 11px;
+        width: 350px;
+        margin-top: 15px;
+        margin-bottom: 20px;
     }
     #right_part{
         position: relative;
         margin-top: 225px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .input_photo{
         position: absolute;
-        left: 135%;
+        left: 115%;
         top: -5%;
         width: 150px;
     }
     #right_part{
-        width: 450px;
+        width: 350px;
         margin-left: 25px;
         margin-bottom: 40px;
     }
@@ -268,15 +283,45 @@ body{
     .button{
         position: absolute;
         left: 50%;
-        transform: translate(-50%,1050%);
+        transform: translate(-50%,1250%);
+    }
+    .select select {
+        padding: 7px 40px 7px 12px;
+        width: 340px;
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    .select2 select{
+        -webkit-appearance: none;
+        padding: 7px 40px 7px 12px;
+        width: 110px;
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    .other input{
+        height: 30px;
+        width: 340px;
+        outline: none;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        box-shadow: 0 1px 3px -2px #9098a9;
+        margin-top: 7px;
+    }
+    .sex{
+        margin-right: 31px;
+        margin-left: 10px;
+        margin-top: 7px;
     }
 }
+
+
 @media (max-height: 5000px) and (min-height: 750px){
     .container{
       position: absolute;
     }
   }
-  @media (max-height: 750px) and (min-height: 10px){
+@media (max-height: 750px) and (min-height: 10px){
     .container{
       position: absolute;
       top: 7%;
