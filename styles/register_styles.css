@@ -4,13 +4,17 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 body{
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   background: linear-gradient(135deg, #c33764, #1d2671);
-  height: 100vh;
+  overflow: hidden
 }
 .container{
   width: 750px;
@@ -177,5 +181,27 @@ p {
   }
   .text {
     display: none;
+  }
+}
+@media (max-height: 5000px) and (min-height: 750px){
+  .container{
+    position: absolute;
+  }
+}
+@media (max-height: 750px) and (min-height: 10px){
+  .container{
+    position: absolute;
+    top: 7%;
+    padding-bottom:  25px;
+  }
+  body{
+    height: calc(100% + 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #c33764, #1d2671);
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 }
