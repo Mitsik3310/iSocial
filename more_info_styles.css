@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #c33764, #1d2671);
+    box-shadow: 0 1px 3px -2px #9098a9;
+}
+#container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    height: 750px;
+    width: 800px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+#right_part{
+    float: left;
+    width: 450px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#awatar{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.input_photo{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+#hidden{
+    display: none;
+}
+.setPicture{
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    background: #1d2671;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+.setPicture:hover{
+    transition: all 0.3s ease;
+    background: #c33764;
+}
+#left_part{
+    float: left;
+    width: 200px;
+    margin-left: 50px;
+    height: 400px;
+    padding: 5px;
+}
+#upper{
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#upperlow{
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.button{
+    position: absolute;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #1d2671;
+    line-height: 30px;
+    left: 50%;
+    transform: translate(-40%, 0);
+    margin-top: 80%;
+    text-align: center;
+}
+.button:hover{
+    transition: all 0.3s ease;
+    background: #c33764;
+}
+.select {
+    position: relative;
+    width: 250px;
+}
+.select2{
+    position: relative;
+    width: 150px;
+}
+.select svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+}
+.select2 svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+}
+.select select {
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 400px;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 150ms ease;
+    margin-top: 7px;
+}
+.select2 select{
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 130px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 150ms ease;
+    margin-top: 7px;
+}
+.select select:focus {
+    outline: none;
+    border-color: #1d2671;
+    box-shadow: 0 0 0 2px rgba(29, 38, 113, 0.2)
+}
+.select2 select:focus {
+    outline: none;
+    border-color: #1d2671;
+    box-shadow: 0 0 0 2px rgba(29, 38, 113, 0.2)
+}
+.sprites {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+}
+.sex{
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.other input{
+    height: 30px;
+    width: 400px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    margin-top: 7px;
+}
+
+/* @media (max-width: 850px) and (min-width: 500px) {
+
+    body{
+        height: 101vh;
+        overflow-y: hidden;
+    }
+    #container{
+        width: 500px;
+        height: 900px;
+    }
+    #left_part{
+        position: absolute;
+        transform: translate();
+    }
+    #right_part{
+        position: relative;
+        margin-top: 225px;
+    }
+    .input_photo{
+        position: absolute;
+        left: 135%;
+        top: -5%;
+        width: 150px;
+    }
+    #right_part{
+        width: 450px;
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+    #awatar{
+        position: relative;
+        margin-top: 5%;
+    }
+    #name{
+        position: absolute;
+        top: 50%
+    }
+    .button{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,1050%);
+    }
+} */
+@media (max-width: 850px) and (min-width: 200px) {
+
+    body{
+        height: (100% + 50px);
+    }
+    #container{
+        width: 400px;
+        height: 900px;
+    }
+    #left_part{
+        position: absolute;
+        transform: translate(-20%, 0%);
+    }
+    #upper{
+        font-size: 14px;
+        width: 350px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+    #upperlow{
+        font-size: 11px;
+        width: 350px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    #right_part{
+        position: relative;
+        margin-top: 225px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input_photo{
+        position: absolute;
+        left: 115%;
+        top: -5%;
+        width: 150px;
+    }
+    #right_part{
+        width: 350px;
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+    #awatar{
+        position: relative;
+        margin-top: 5%;
+    }
+    #name{
+        position: absolute;
+        top: 50%
+    }
+    .button{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,1250%);
+    }
+    .select select {
+        padding: 7px 40px 7px 12px;
+        width: 340px;
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    .select2 select{
+        -webkit-appearance: none;
+        padding: 7px 40px 7px 12px;
+        width: 110px;
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    .other input{
+        height: 30px;
+        width: 340px;
+        outline: none;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        box-shadow: 0 1px 3px -2px #9098a9;
+        margin-top: 7px;
+    }
+}
+
+
+@media (max-height: 5000px) and (min-height: 750px){
+    .container{
+      position: absolute;
+    }
+  }
+@media (max-height: 750px) and (min-height: 10px){
+    .container{
+      position: absolute;
+      top: 7%;
+      padding-bottom:  25px;
+    }
+    body{
+      height: calc(100% + 250px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: linear-gradient(135deg, #c33764, #1d2671);
+      overflow-x: hidden;
+      overflow-y: scroll;;
+    }
+  }
