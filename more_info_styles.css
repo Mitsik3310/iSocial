@@ -232,7 +232,7 @@ body{
 @media (max-width: 850px) and (min-width: 200px) {
 
     body{
-        height: (100% + 50px);
+        height: (100% + 100px);
     }
     #container{
         width: 400px;
@@ -309,20 +309,19 @@ body{
         margin-top: 7px;
     }
     .sex{
-        margin-right: 30px;
-        margin-left: 7px;
+        margin-right: 27px;
+        margin-left: 5px;
         margin-top: 7px;
     }
 
 }
 
-
-@media (max-height: 5000px) and (min-height: 750px){
+@media (max-height: 5000px) and (min-height: 900px){
     .container{
       position: absolute;
     }
   }
-@media (max-height: 750px) and (min-height: 10px){
+@media (max-height: 900px) and (min-height: 10px){
     .container{
       position: absolute;
       top: 7%;
