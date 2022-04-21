@@ -56,7 +56,7 @@ body{
     font-size: 15px;
     font-weight: 300;
     cursor: pointer;
-    background: #1d2671;
+    background: #4070f4;
     line-height: 25px;
     text-align: center;
     margin-top: 10px;
@@ -92,7 +92,7 @@ body{
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
-    background: #1d2671;
+    background: #4070f4;
     line-height: 30px;
     left: 50%;
     transform: translate(-40%, 0);
@@ -155,12 +155,12 @@ body{
 }
 .select select:focus {
     outline: none;
-    border-color: #1d2671;
+    border-color: #4070f4;
     box-shadow: 0 0 0 2px rgba(29, 38, 113, 0.2)
 }
 .select2 select:focus {
     outline: none;
-    border-color: #1d2671;
+    border-color: #4070f4;
     box-shadow: 0 0 0 2px rgba(29, 38, 113, 0.2)
 }
 .sprites {
@@ -186,49 +186,6 @@ body{
     margin-top: 7px;
 }
 
-/* @media (max-width: 850px) and (min-width: 500px) {
-
-    body{
-        height: 101vh;
-        overflow-y: hidden;
-    }
-    #container{
-        width: 500px;
-        height: 900px;
-    }
-    #left_part{
-        position: absolute;
-        transform: translate();
-    }
-    #right_part{
-        position: relative;
-        margin-top: 225px;
-    }
-    .input_photo{
-        position: absolute;
-        left: 135%;
-        top: -5%;
-        width: 150px;
-    }
-    #right_part{
-        width: 450px;
-        margin-left: 25px;
-        margin-bottom: 40px;
-    }
-    #awatar{
-        position: relative;
-        margin-top: 5%;
-    }
-    #name{
-        position: absolute;
-        top: 50%
-    }
-    .button{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,1050%);
-    }
-} */
 @media (max-width: 850px) and (min-width: 200px) {
 
     body{
@@ -246,14 +203,16 @@ body{
         font-size: 14px;
         width: 350px;
         margin-top: 20px;
-        margin-bottom: 15px;
-        text-align: justify;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 15px;
+        text-align: justify;
     }
     #upperlow{
         font-size: 11px;
         width: 350px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 15px;
         margin-bottom: 20px;
     }
@@ -265,14 +224,14 @@ body{
     }
     .input_photo{
         position: absolute;
-        left: 115%;
-        top: -5%;
+        left: 110%;
+        top: 0%;
         width: 150px;
     }
     #right_part{
         width: 350px;
-        margin-left: 25px;
-        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-bottom: 35px;
     }
     #awatar{
         position: relative;
@@ -280,7 +239,8 @@ body{
     }
     #name{
         position: absolute;
-        top: 50%
+        top: 47%;
+        left: 7%;
     }
     .button{
         position: absolute;
@@ -313,9 +273,8 @@ body{
     .sex{
         margin-right: 27px;
         margin-left: 5px;
-        margin-top: 7px;
+        margin-top: 10px;
     }
-
 }
 
 @media (max-height: 5000px) and (min-height: 900px){
@@ -339,4 +298,8 @@ body{
       overflow-x: hidden;
       overflow-y: scroll;;
     }
+}
+input:is(:focus, :valid){
+    border-color: #4070f4;
   }
+  

@@ -1,6 +1,146 @@
 html{
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body{
-    /* https://blog.karenying.com/posts/50-shades-of-dark-mode-gray */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18191a;
+    color: #CCCCCC;
+    overflow-x: hidden;
 }
+
+.navbar{
+    position: relative;
+    height: 120px;
+    width: 500px;
+    background: #242526;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar ul{
+    position: relative;
+    display: flex;
+}
+.navbar ul li{
+    position: relative;
+    list-style-type: none;
+}
+.navbar ul li a{
+    position: relative;
+    height: 120px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.navbar ul li a i{
+    position: absolute;
+    font-size: 38px;
+    color: #3f4893;
+}
+ul li a i.activeIcon{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s ease;
+    transition-delay: 0.2s;
+}
+.navbar ul li.active a i{
+    opacity: 1;
+    pointer-events: auto;
+}
+.navbar ul .indicator{
+    position: absolute;
+    bottom: -19px;
+    left: 70px;
+    height: 36px;
+    width: 25px;
+    background: #3f4893;
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+ul .indicator::before{
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 50%;
+    height: 22px;
+    width: 20px;
+    background: #242526;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 0 #3f4893;
+}
+ul .indicator::after{
+    content: "";
+    position: absolute;
+    right: -15px;
+    bottom: 50%;
+    height: 22px;
+    width: 20px;
+    background: #242526;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 10px 0 #3f4893;
+}
+
+
+.notification {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+  
+.notification:hover {
+    background: red;
+}
+  
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 25px; 
+    right: 50px; 
+    z-index: 100; 
+    border: none; 
+    outline: none; 
+    background-color: #1d2671; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px; 
+    font-size: 30px; 
+}
+#myBtn:hover {
+    background-color: #c33764;
+    transition: all 0.3s ease; 
+}
+/* 
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc; */

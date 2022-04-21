@@ -9,6 +9,8 @@
       <link rel="stylesheet" href="../styles/more_info_styles.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+      <script src="../scripts/alert.js" async></script>
    </head>
    <body>
       <div id="container">
@@ -225,7 +227,7 @@
                <input type="text" placeholder="&nbsp Opowiedz coś o sobie..."> 
             </div>
             <br>
-            <div class="input">
+            <div class="input" id="gender">
                <span class="text_above_fill">Wybierz swoją płeć. *</span> </br>
                Mężczyzna <input type="radio" class="sex" value="f"/>
                Kobieta   <input type="radio" class="sex" value="m" />
@@ -239,11 +241,4 @@
          <input type="file" id="getFile">
       </div>
    </body>
-   <script>
-      function showAlert() {
-        var info = "Wciśnięcie przycisku 'ok' rozumiane jest jako znajomość i pełna akceptacja warunków użytkowania usługi, jak i polityki prywatności naszej firmy";
-        alert (info);
-        setTimeout("location.href='https://mitsik3310.github.io/iSocial/';",1);
-      }
-   </script>
 </html>

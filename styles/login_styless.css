@@ -63,7 +63,7 @@ body{
   font-size: 15px;
   font-weight: 400;
   cursor: pointer;
-  background: #1d2671;
+  background: #4070f4;
   line-height: 30px;
   text-align: center;
 }
@@ -92,7 +92,7 @@ body{
   padding-left: 3px;
 }
 .google a{
-  background: #1d2671;
+  background: #4070f4;
   margin: 20px 0 30px 0;
   text-align: center;
 }
@@ -102,7 +102,7 @@ body{
 }
 .acc a{
  text-decoration: none;
- color: #1d2671;
+ color: #4070f4;
 }
 .acc{
   text-align: center;
@@ -231,4 +231,7 @@ p {
     overflow-x: hidden;
     overflow-y: scroll;;
   }
+}
+input:is(:focus, :valid){
+  border-color: #4070f4;
 }

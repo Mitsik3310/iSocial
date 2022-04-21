@@ -136,7 +136,7 @@ p {
 
 .acc a{
   text-decoration: none;
-  color: #1d2671;
+  color: #4070f4;
 }
 .acc{
   text-align: right;
@@ -204,4 +204,7 @@ p {
     overflow-x: hidden;
     overflow-y: scroll;
   }
+}
+input:is(:focus, :valid){
+  border-color: #4070f4;
 }
