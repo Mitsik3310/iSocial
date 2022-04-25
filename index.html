@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta charset="UTF-8">
-      <title>Isocial - strona główna</title>
+      <title>ISocial - strona główna</title>
       <link rel="stylesheet" href="styles/main.css">
       <meta name="description" content="Najpopularniejszy portal społecznościowy. Zaloguj się na nowym urządzeniu."/>
       <meta name="keywords" content = "iSocial, isocial, social"/>
@@ -21,6 +21,10 @@
       <div id="container">
          <div id="topbar">
             <div id="lefttop">
+              <img src="media/logo_rounded.png" id="lefttoplogo">
+                <div class="search_box">
+                  <i class="fa fa-magnifying-glass"></i></i> <input type="text" class="input_search" placeholder="Czego szukasz?">
+                </div>
             </div>
             <div id="righttop">
                <div class="navbar">
@@ -66,13 +70,30 @@
             </div>
          </div>
          <div id="rightbar">
+
          </div>
          <div id="main">
             <div id="createpost">
+              <p id="editable" contenteditable="true">Utwórz post, dodaj zdjęcie, podziel się filmem, i wiele więcej...</p>
+              <div id="tiles">
+                <button class="tile">
+                  <p>Dodaj zdjęcie</p>
+                  <i class="fas fa-image"></i>
+                </button>
+                <button class="tile">
+                  <p>Dodaj film</p>
+                  <i class="fas fa-video"></i>
+                </button>
+                <button class="tile">
+                  <p>Opublikuj</p>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
             </div>
             <div class="post">
             </div>
             <div class="post">
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>d
             </div>
             <div class="post">
             </div>
@@ -84,7 +105,7 @@
       <span>Inbox</span>
       <span class="badge">3</span>
       </a> -->
-      <button onclick="topFunction()" id="myBtn" title="Przewiń na górę strony">&uarr;</button>
+      <button onclick="topFunction()" id="totop" title="Przewiń na górę strony">&uarr;</button>
    </body>
 
    <!-- <script>

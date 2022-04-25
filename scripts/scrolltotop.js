@@ -1,4 +1,4 @@
- mybutton = document.getElementById("myBtn");
+ mybutton = document.getElementById("totop");
       
  window.onscroll = function() {scrollFunction()};
  
