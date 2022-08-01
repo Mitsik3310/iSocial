@@ -34,50 +34,26 @@
                         <label for="email" class="text_above_fill">Email</label>
                         <input type="email" placeholder="Podaj swój email." id="email" name="email"/>
                     </div>
-                        <?php
-                            if (isset($_SESSION['e_email']))
-                            {
-                                echo '<div class="error">'.$_SESSION['e_email'].'</div>';
-                                unset($_SESSION['e_email']);
-                            }
-                        ?>
+                        
                     <div class="input">
                         <label for="user_name" class="text_above_fill">Nazwa użytkownika</label>
                         <input type="text" placeholder="Podaj nazwę użytkownika." id="user_name" name="user_name" required />
                     </div>
 
-                        <?php
-                            if (isset($_SESSION['e_user_name']))
-                            {
-                            echo '<div class="error">'.$_SESSION['e_user_name'].'</div>';
-                            unset($_SESSION['e_user_name']);
-                            }
-                        ?>
+                        
 
                     <div class="input">
                         <label for="password" class="text_above_fill">Hasło</label>
                         <input type="password" placeholder="Podaj swoje hasło." id="password" name="password" required />
                     </div>
 
-                        <?php
-                            if (isset($_SESSION['e_password']))
-                            {
-                                echo '<div class="error">'.$_SESSION['e_password'].'</div>';
-                                unset($_SESSION['e_password']);
-                            }
-		                ?>		
+                        	
                     <div class="input">
                         <span class="text_above_fill">Potwierdź hasło *</span>
                         <input type="password" placeholder="Powtórz swoje hasło." id="password2" name="password2" required/>
                     </div>
 
-                        <?php
-                            if (isset($_SESSION['e_password2']))
-                            {
-                                echo '<div class="error">'.$_SESSION['e_password2'].'</div>';
-                                unset($_SESSION['e_password2']);
-                            }
-		                ?>	
+                       
 
                 </div>
                 <div class="submit">
